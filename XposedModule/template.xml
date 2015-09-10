@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<template
+    name="Xposed Module"
+    description="Creates a new Xposed Module"
+    format="3"
+    minApi="15"
+    minBuildApi="15"
+    revision="2">
+
+    <category value="Other"/>
+
+    <parameter
+        name="Xposed Mod class"
+        constraints="nonempty|unique"
+        default="XposedMod"
+        help="Class that contains Xposed code"
+        id="xposedModClass"
+        type="class "/>
+
+    <parameter
+        name="Xposed Description"
+        constraints="nonempty"
+        help="Description of Xposed Module"
+        id="xposedDescription"
+        type="string"/>
+
+    <parameter
+        name="Package name"
+        constraints="package"
+        default="com.mycompany.myapp.xposed"
+        id="packageName"
+        type="string"/>
+
+    <thumbs>
+        <thumb>template_xposed_module.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+
+</template>
