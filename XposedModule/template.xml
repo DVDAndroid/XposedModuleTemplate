@@ -5,17 +5,17 @@
     format="3"
     minApi="15"
     minBuildApi="15"
-    revision="2">
+    revision="3">
 
     <category value="Other"/>
 
     <parameter
         name="Xposed Mod class"
-        constraints="nonempty|unique"
+        constraints="nonempty|unique|class"
         default="XposedMod"
         help="Class that contains Xposed code"
         id="xposedModClass"
-        type="class "/>
+        type="string"/>
 
     <parameter
         name="Xposed Description"
