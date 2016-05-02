@@ -1,4 +1,6 @@
 
 
-// created with androidstudio template by dvdandroid
+
+
+// created with XposedModuleTemplate by dvdandroid
 // http://github.com/dvdandroid/XposedModuleTemplate
