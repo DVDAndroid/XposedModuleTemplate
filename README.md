@@ -18,5 +18,6 @@ If Android Studio is open, restart it.
  - Click **File > New > Other > Xposed Module** (or right click in the project)
  - Type your Xposed Description and your class name
  - Click **Finish** and wait for Gradle sync
+ - In the module build.gradle, replace `implementation` in `implementation 'de.robv.android.xposed:api'` with `compileOnly`
 
 ![](https://github.com/DVDAndroid/XposedModuleTemplate/blob/master/wizard.png)
